@@ -1,5 +1,5 @@
 .section-about {
-  padding: 16rem;
+  padding: 16rem 16rem 30rem 16rem;
   background-color: $color-gray;
   margin-top: -12.5rem;
 }
@@ -44,5 +44,22 @@
     &:not(:hover) {
       transform: scale(0.95);
     }
+  }
+}
+
+.section-feutures {
+  padding: 20rem;
+  background-image: linear-gradient(
+      to top right,
+      $color-primary-darken,
+      $color-primary-lighten
+    ),
+    url('../img/hero.jpg');
+  background-size: cover;
+  transform: skewY(-5deg);
+  margin-top: -12rem;
+
+  & > * {
+    transform: skewY(5deg);
   }
 }

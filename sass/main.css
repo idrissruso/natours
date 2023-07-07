@@ -102,7 +102,7 @@ body {
 }
 
 .section-about {
-  padding: 16rem;
+  padding: 16rem 16rem 30rem 16rem;
   background-color: #e7e7e7;
   margin-top: -12.5rem;
 }
@@ -143,6 +143,17 @@ body {
 }
 .about__img:not(:hover) {
   transform: scale(0.95);
+}
+
+.section-feutures {
+  padding: 20rem;
+  background-image: linear-gradient(to top right, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  transform: skewY(-5deg);
+  margin-top: -12rem;
+}
+.section-feutures > * {
+  transform: skewY(5deg);
 }
 
 .header {
@@ -288,6 +299,28 @@ body {
 }
 .btn-outlined:hover {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.feutures__card {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.4rem;
+  transition: all 0.5s;
+}
+.feutures__card {
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+}
+.feutures__card:hover {
+  transform: translateY(-2rem);
+}
+.feutures__icon {
+  display: block;
+  font-size: 6rem;
+  color: rgba(40, 180, 133, 0.8);
+}
+.feutures__paragraph {
+  margin-top: 1rem;
 }
 
 @keyframes left_to_right {

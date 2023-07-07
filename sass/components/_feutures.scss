@@ -1,0 +1,23 @@
+.feutures {
+  &__card {
+    background-color: rgba($color-white, 0.6);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.4rem;
+    transition: all 0.5s;
+    @include box-shadow-m;
+    &:hover {
+      transform: translateY(-2rem);
+    }
+  }
+
+  &__icon {
+    display: block;
+    font-size: 6rem;
+    color: $color-primary-darken;
+  }
+
+  &__paragraph {
+    margin-top: 1rem;
+  }
+}
