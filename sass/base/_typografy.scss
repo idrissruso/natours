@@ -1,0 +1,27 @@
+body {
+  font-family: 'lato' sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777;
+}
+.secondary-heading {
+  display: inline-block;
+  font-weight: 700;
+  color: transparent;
+  font-size: 3rem;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  background-image: linear-gradient(
+    to right top,
+    $color-primary-darken,
+    $color-primary-lighten
+  );
+  background-clip: text;
+  transition: all 0.5s;
+
+  &:hover {
+    transform: scale(1.1) skewX(15deg) skewY(2deg);
+  }
+}
