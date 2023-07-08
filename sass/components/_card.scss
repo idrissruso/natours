@@ -77,6 +77,32 @@
 
   &__description {
     position: absolute;
-    padding: 3rem;
+    top: 13rem;
+    right: 2.5rem;
+    color: $color-white;
+    font-weight: 300;
+    width: 55%;
+    font-size: 2.5rem;
+
+    &-heading {
+      text-transform: uppercase;
+      box-decoration-break: clone;
+      padding: 0.6rem 1.6rem;
+
+      &-1 {
+        background-image: linear-gradient(
+          to top right,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-darken,
+          $color-primary-lighten
+        );
+      }
+    }
   }
 }
