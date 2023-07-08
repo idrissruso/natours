@@ -17,3 +17,10 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.4);
   }
 }
+
+@mixin centrelize {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

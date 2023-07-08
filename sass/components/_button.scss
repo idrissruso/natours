@@ -41,6 +41,25 @@
       background-color: $color-white;
     }
   }
+  &-green {
+    border-radius: 4rem;
+    margin-top: 4rem;
+    background-color: $color-primary-darken;
+    color: $color-white;
+    animation: bottom_to_up 2s ease;
+
+    &:hover {
+      transform: translateY(-1rem);
+      box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+      &::after {
+        transform: scaleX(1.4) scaleY(1.3);
+        opacity: 0;
+      }
+    }
+    &::after {
+      background-color: $color-primary-darken;
+    }
+  }
 
   &:active {
     box-shadow: 0 0 0 !important;

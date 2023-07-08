@@ -65,6 +65,44 @@
     &-back {
       background-color: green;
       transform: rotateY(180deg);
+      position: relative;
+      text-align: center;
+
+      &--box {
+        @include centrelize;
+        width: 60%;
+      }
+
+      .price {
+        display: inline-block;
+        text-transform: uppercase;
+        color: $color-white;
+        font-weight: 100;
+        font-size: 5rem;
+      }
+
+      &--1 {
+        background-image: linear-gradient(
+          to top right,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+
+      &--2 {
+        background-image: linear-gradient(
+          to top right,
+          $color-primary-lighten,
+          $color-primary-darken
+        );
+      }
+      &--3 {
+        background-image: linear-gradient(
+          to top right,
+          $color-blue-light,
+          $color-blue-light
+        );
+      }
     }
   }
 
@@ -104,5 +142,14 @@
         );
       }
     }
+  }
+
+  &-btn {
+    opacity: 0;
+    transition: all 2s !important;
+  }
+
+  &:hover &-btn {
+    opacity: 1;
   }
 }
