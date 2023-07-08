@@ -54,7 +54,7 @@
       $color-primary-darken,
       $color-primary-lighten
     ),
-    url('../img/hero.jpg');
+    url('../img/nat-4.jpg');
   background-size: cover;
   transform: skewY(-6deg);
   margin-top: -12rem;
@@ -62,4 +62,10 @@
   & > * {
     transform: skewY(6deg);
   }
+}
+
+.section-tours {
+  padding: 16rem;
+  background-color: $color-gray;
+  margin-top: -7.5rem;
 }

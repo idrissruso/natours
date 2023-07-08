@@ -147,13 +147,19 @@ body {
 
 .section-feutures {
   padding: 20rem;
-  background-image: linear-gradient(to top right, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.8)), url("../img/hero.jpg");
+  background-image: linear-gradient(to top right, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   transform: skewY(-6deg);
   margin-top: -12rem;
 }
 .section-feutures > * {
   transform: skewY(6deg);
+}
+
+.section-tours {
+  padding: 16rem;
+  background-color: #e7e7e7;
+  margin-top: -7.5rem;
 }
 
 .header {
