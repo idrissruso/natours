@@ -329,6 +329,70 @@ body {
   margin-top: 1rem;
 }
 
+.card {
+  text-align: right;
+  position: relative;
+  height: 55rem;
+  perspective: 200rem;
+}
+.card__side {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+.card__side {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.card__side-front {
+  background-color: #fff;
+}
+.card__side-front--img {
+  height: 25rem;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  backface-visibility: hidden;
+}
+.card__side-front--img-1 {
+  background-image: linear-gradient(to top right, #ffb900, #ff7730), url("../img/nat-5.jpg");
+}
+.card__side-front--img-2 {
+  background-image: linear-gradient(to top right, rgba(40, 180, 133, 0.8), rgba(126, 213, 111, 0.8)), url("../img/nat-6.jpg");
+}
+.card__side-front--img-3 {
+  background-image: linear-gradient(to top right, #2998ff, #2998ff), url("../img/nat-7.jpg");
+}
+.card__side-front--content {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+.card__side-front--content__item {
+  padding: 1rem;
+}
+.card__side-front--content__item:not(:first-child) {
+  border-top: 1px solid;
+}
+.card__side-back {
+  background-color: green;
+  transform: rotateY(180deg);
+}
+.card:hover .card__side-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card__side-back {
+  transform: rotateY(0deg);
+}
+.card__description {
+  position: absolute;
+  padding: 3rem;
+}
+
 @keyframes left_to_right {
   0% {
     transform: translateX(-20rem);

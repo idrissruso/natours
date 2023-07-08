@@ -1,0 +1,82 @@
+.card {
+  text-align: right;
+  position: relative;
+  height: 55rem;
+  perspective: 200rem;
+
+  &__side {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 1s;
+    backface-visibility: hidden;
+    @include box-shadow-s;
+    &-front {
+      background-color: $color-white;
+      &--img {
+        height: 25rem;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: screen;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        backface-visibility: hidden;
+
+        &-1 {
+          background-image: linear-gradient(
+              to top right,
+              $color-orange-light,
+              $color-orange-dark
+            ),
+            url('../img/nat-5.jpg');
+        }
+        &-2 {
+          background-image: linear-gradient(
+              to top right,
+              $color-primary-darken,
+              $color-primary-lighten
+            ),
+            url('../img/nat-6.jpg');
+        }
+        &-3 {
+          background-image: linear-gradient(
+              to top right,
+              $color-blue-light,
+              $color-blue-light
+            ),
+            url('../img/nat-7.jpg');
+        }
+      }
+
+      &--content {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        width: 60%;
+
+        &__item {
+          padding: 1rem;
+          &:not(:first-child) {
+            border-top: 1px solid;
+          }
+        }
+      }
+    }
+
+    &-back {
+      background-color: green;
+      transform: rotateY(180deg);
+    }
+  }
+
+  &:hover &__side-front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side-back {
+    transform: rotateY(0deg);
+  }
+
+  &__description {
+    position: absolute;
+    padding: 3rem;
+  }
+}
