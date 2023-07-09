@@ -1,0 +1,4 @@
+.book {
+  @include centrelize;
+  background-color: $color-white;
+}
