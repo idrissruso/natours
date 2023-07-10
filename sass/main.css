@@ -262,6 +262,33 @@ body {
   background-color: #3d3d3d;
   padding: 10rem;
 }
+.footer__content {
+  margin-top: 7rem;
+}
+.footer__list {
+  list-style: none;
+  border-top: 1px solid #fff;
+  display: inline-block;
+}
+.footer__list-item {
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.footer__list-item:not(:last-child) {
+  margin-right: 2rem;
+}
+.footer__link,
+.footer__link :visited, .footer__link:link {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer__copyright {
+  border-top: 1px solid #fff;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.3rem;
+}
 
 .btn, .btn:link, .btn:visited {
   position: relative;
