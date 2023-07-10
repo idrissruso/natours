@@ -50,7 +50,7 @@ html {
 
 body {
   padding: 3rem;
-  color: #777;
+  color: #3d3d3d;
 }
 
 body {
@@ -81,7 +81,7 @@ body {
 .tertiary-heading {
   display: inline-block;
   text-transform: uppercase;
-  color: #777;
+  color: #3d3d3d;
   font-size: 1.6rem;
 }
 
@@ -258,6 +258,11 @@ body {
     );
 }
 
+.footer {
+  background-color: #3d3d3d;
+  padding: 10rem;
+}
+
 .btn, .btn:link, .btn:visited {
   position: relative;
   display: inline-block;
@@ -286,7 +291,7 @@ body {
   border-radius: 4rem;
   margin-top: 4rem;
   background-color: white;
-  color: #777;
+  color: #3d3d3d;
   animation: bottom_to_up 2s ease;
 }
 .btn-white:hover {
