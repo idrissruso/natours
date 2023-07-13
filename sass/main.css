@@ -846,6 +846,10 @@ body {
 .popup__close:active {
   transform: translateY(0.2rem);
 }
+.popup__close:hover {
+  color: rgba(40, 180, 133, 0.8);
+}
+
 @keyframes left_to_right {
   0% {
     transform: translateX(-20rem);
