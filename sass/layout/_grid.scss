@@ -2,6 +2,10 @@
   max-width: 117rem;
   margin: 0 auto;
 
+  @include respond(tablet-m) {
+    max-width: 100%;
+  }
+
   &:not(:last-child) {
     margin-bottom: $gutter-vertical;
   }
@@ -9,6 +13,10 @@
   @include clearfix;
 
   [class^='col-'] {
+    @include respond(tablet-m) {
+      width: 100% !important;
+      margin-bottom: 5rem;
+    }
     float: left;
 
     &:not(:last-child) {

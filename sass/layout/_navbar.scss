@@ -21,6 +21,10 @@
     top: 5.5rem;
     position: fixed;
     transition: 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+    @include respond(tablet-m) {
+      right: 3rem;
+      top: 3rem;
+    }
   }
 
   &__button {
@@ -35,6 +39,11 @@
     top: 5rem;
     position: fixed;
     text-align: center;
+
+    @include respond(tablet-m) {
+      right: 2rem;
+      top: 2rem;
+    }
   }
 
   &__icon {
@@ -96,6 +105,10 @@
     &:link,
     &:visited {
       text-decoration: none;
+    }
+
+    @include respond(phone) {
+      font-size: 2rem;
     }
 
     color: $color-white;

@@ -7,9 +7,23 @@
 
 html {
   font-size: 62.5%;
+  @include respond(huge-screen) {
+    font-size: 75%; // 1rem -> 12px 12/16
+  }
+
+  @include respond(tablet-l) {
+    font-size: 52.5%; // 1rem -> 9px 9/16
+  }
+
+  @include respond(tablet-m) {
+    font-size: 50%; // 1rem -> 8px 8/16
+  }
 }
 
 body {
   padding: 3rem;
   color: $color-gray-1;
+  @include respond(tablet-m) {
+    padding: 0;
+  }
 }

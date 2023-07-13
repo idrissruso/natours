@@ -12,6 +12,11 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
+  @include respond(tablet-m) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
   &__logo {
     position: absolute;
     top: 3rem;
@@ -37,6 +42,10 @@
       font-weight: 400;
       letter-spacing: 3.5rem;
       animation: right_to_left 2s ease;
+      @include respond(phone) {
+        letter-spacing: 0.5rem;
+        font-size: 5rem;
+      }
     }
 
     &-down {
@@ -45,6 +54,10 @@
       letter-spacing: 1.7rem;
       text-transform: uppercase;
       animation: left_to_right 2s ease;
+      @include respond(phone) {
+        letter-spacing: 1rem;
+        font-size: 1rem;
+      }
     }
   }
 }

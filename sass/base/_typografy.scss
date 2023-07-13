@@ -24,6 +24,12 @@ body {
   &:hover {
     transform: scale(1.1) skewX(15deg) skewY(2deg);
   }
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+  @include respond(tablet-m) {
+    font-size: 2.5rem;
+  }
 }
 
 .tertiary-heading {
