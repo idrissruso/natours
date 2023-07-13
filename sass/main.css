@@ -778,20 +778,29 @@ body {
 .popup {
   height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 2000;
   position: fixed;
   top: 0;
   left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
 }
 .popup__wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.1);
   background-color: #fff;
   width: 75%;
   display: table;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+.popup__wrapper {
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
 }
 .popup__image-box {
   width: 33.33333%;
@@ -817,6 +826,13 @@ body {
        column-rule: 1px solid #000;
   -webkit-hyphens: auto;
           hyphens: auto;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup__wrapper {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 @keyframes left_to_right {
