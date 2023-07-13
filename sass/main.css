@@ -834,7 +834,18 @@ body {
 .popup:target .popup__wrapper {
   transform: translate(-50%, -50%) scale(1);
 }
-
+.popup__close, .popup__close:link, .popup__close:visited {
+  text-decoration: none;
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 3rem;
+  line-height: 1;
+  transition: all 0.2s;
+}
+.popup__close:active {
+  transform: translateY(0.2rem);
+}
 @keyframes left_to_right {
   0% {
     transform: translateX(-20rem);

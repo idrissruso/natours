@@ -54,4 +54,25 @@
   &:target &__wrapper {
     transform: translate(-50%, -50%) scale(1);
   }
+
+  &__close {
+    &,
+    &:link,
+    &:visited {
+      text-decoration: none;
+      position: absolute;
+      top: 2rem;
+      right: 3rem;
+      font-size: 3rem;
+      line-height: 1;
+      transition: all 0.2s;
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+
+    &:hover {
+    }
+  }
 }
