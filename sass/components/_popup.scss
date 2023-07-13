@@ -14,14 +14,28 @@
     display: table;
   }
 
-  &__image-box,
-  &__content {
+  &__image-box {
+    width: 33.33333%;
     display: table-cell;
-    vertical-align: top;
+  }
+
+  &__content {
+    width: 66.66667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
   }
 
   &__image {
-    width: 40rem;
+    width: 100%;
     display: block;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid $color-black;
+    hyphens: auto;
   }
 }

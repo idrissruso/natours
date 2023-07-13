@@ -793,13 +793,30 @@ body {
   width: 75%;
   display: table;
 }
-.popup__image-box, .popup__content {
+.popup__image-box {
+  width: 33.33333%;
   display: table-cell;
-  vertical-align: top;
+}
+.popup__content {
+  width: 66.66667;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 3rem 5rem;
 }
 .popup__image {
-  width: 40rem;
+  width: 100%;
   display: block;
+}
+.popup__text {
+  font-size: 1.4rem;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  -moz-column-rule: 1px solid #000;
+       column-rule: 1px solid #000;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 @keyframes left_to_right {
