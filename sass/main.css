@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*Break POints
+
+0-600 : Phone
+600-900 : tablat-Portail
+900-1200 : tablet-landscape
+1200-1800 : normal screen (desktop)
+1800 - ♾️ : huge screen
+
+
+*/
 @keyframes left_to_right {
   0% {
     transform: translateX(-20rem);

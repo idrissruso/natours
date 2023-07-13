@@ -24,3 +24,41 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*Break POints
+
+0-600 : Phone
+600-900 : tablat-Portail
+900-1200 : tablet-landscape
+1200-1800 : normal screen (desktop)
+1800 - ♾️ : huge screen
+
+
+*/
+
+@mixin respond($breakPoint) {
+  @if ($breakPoint == phone) {
+    @media (max-width: 37.5em) {
+      //600px
+      @content;
+    }
+  }
+  @if ($breakPoint == tablet-m) {
+    //900px
+    @media (max-width: 56.3em) {
+      @content;
+    }
+  }
+  @if ($breakPoint == tablet-l) {
+    //1200px
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if ($breakPoint == huge-screen) {
+    //1800px
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
